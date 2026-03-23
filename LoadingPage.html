@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bounce Rate Analyzer</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            font-family: monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            width: 400px;
+        }
+
+        h1 {
+            letter-spacing: 3px;
+        }
+
+        .progress-container {
+            width: 100%;
+            background-color: #333;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .progress-bar {
+            height: 20px;
+            width: 0%;
+            background-color: #00ff99;
+            border-radius: 5px;
+            transition: width 0.5s;
+        }
+
+        .status {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .status p {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .check {
+            color: #00ff99;
+        }
+
+        .dots {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>BOUNCE RATE ANALYZER</h1>
+
+    <p>Analyzing Website...</p>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progress"></div>
+    </div>
+
+    <div class="status">
+        <p id="step1">Checking Website Structure <span></span></p>
+        <p id="step2">Checking Accessibility <span></span></p>
+        <p id="step3">Checking Page Performance <span class="dots">...</span></p>
+        <p id="step4">Checking Navigation <span class="dots">...</span></p>
+    </div>
+
+    <p style="margin-top:20px;">Please wait while analysis completes.</p>
+</div>
+
+<script>
+    let progress = 0;
+    let bar = document.getElementById("progress");
+
+    function updateProgress() {
+        if (progress <= 100) {
+            bar.style.width = progress + "%";
+            progress += 10;
+
+            // Update steps
+            if (progress >= 20) {
+                document.querySelector("#step1 span").innerHTML = "✔";
+            }
+            if (progress >= 40) {
+                document.querySelector("#step2 span").innerHTML = "✔";
+            }
+            if (progress >= 70) {
+                document.querySelector("#step3 span").innerHTML = "✔";
+            }
+            if (progress >= 100) {
+                document.querySelector("#step4 span").innerHTML = "✔";
+            }
+
+            setTimeout(updateProgress, 500);
+        }
+    }
+
+    updateProgress();
+</script>
+
+</body>
+</html>

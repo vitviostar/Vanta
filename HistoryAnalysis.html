@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>History Analysis</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 20px;
+    color: #333;
+}
+
+h1, h4 {
+    color: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4vw;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 3vw;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td:last-child {
+    color: #007BFF;
+    cursor: pointer;
+}
+
+table:last-of-type td {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    vertical-align: top;
+}
+p {
+    font-size: 3vw;
+}
+table {
+    font-size: 2.5vw;
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>History Analysis</h1>
+
+<nav>
+    <a href="index.html">Homepage</a>
+    <a href="AnalysisReport.html">Analysis Report</a>
+    <a href="Contact.html">Contact</a>
+    <a href="About.html">About</a>
+</nav>
+
+<p>
+The History Analysis page provides a clear view of the bounce rate trend and percentage over time.
+It allows you to monitor how the bounce rate changes across different periods.
+</p>
+
+<div class="table-container">
+<table border="1" cellspacing="0" cellpadding="10">
+<tr>
+    <th>Date</th>
+    <th>Bounce Rate</th>
+    <th>Page</th>
+    <th>Status</th>
+    <th>Action</th>
+</tr>
+<tr>
+    <td>12/03/2026</td>
+    <td>71%</td>
+    <td>/home</td>
+    <td>High</td>
+    <td>View</td>
+</tr>
+<tr>
+    <td>08/03/2026</td>
+    <td>58%</td>
+    <td>/contact</td>
+    <td>Good</td>
+    <td>View</td>
+</tr>
+<tr>
+    <td>05/03/2026</td>
+    <td>61%</td>
+    <td>/about</td>
+    <td>Average</td>
+    <td>View</td>
+</tr>
+<tr>
+    <td>02/03/2026</td>
+    <td>44%</td>
+    <td>/Sales Page</td>
+    <td>Good</td>
+    <td>View</td>
+</tr>
+</table>
+</div>
+
+<div class="table-container">
+<table cellpadding="20">
+<tr>
+<td>
+<h4>Summary</h4>
+<p>Total Analysis: 43</p>
+<p>Highest bounce rate: 71%</p>
+<p>Lowest bounce rate: 39%</p>
+<p>Average bounce rate: 55%</p>
+</td>
+<td>
+<h4>Bounce rate trend:</h4>
+<p>Feb 28 - 54%</p>
+<p>Mar 04 - 44%</p>
+<p>Mar 09 - 63%</p>
+<p>Mar 12 - 71%</p>
+</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>

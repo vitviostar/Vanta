@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bounce Rate Analyzer</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #222;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+.hero input {
+    padding: 12px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+}
+
+.hero button {
+    padding: 12px 20px;
+    background: #ff6a00;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sections */
+.section {
+    background: white;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Features */
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.box {
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+    <h2>📊 Bounce Rate Analyzer</h2>
+    <div>
+        <a href="AnalysisReport.html">Analysis Report</a>
+        <a href="HistoryAnalysis.html">Analysis History</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+</div>
+
+<div class="hero">
+    <h1>Analyze Your Website Performance</h1>
+    <p>Enter Website URL to Detect Bounce Risk</p>
+
+    <form method="GET">
+        <input type="text" name="url" placeholder="https://example.com">
+        <button type="submit"><a href="LoadingPage.html" class="analyze">Analyze</a></button>
+    </form>
+</div>
+
+<div class="section">
+    <h2>How It Works</h2>
+    <ol>
+        <li>Enter the website URL</li>
+        <li>System scans the website</li>
+        <li>Analyzes bounce indicators</li>
+        <li>Generates report</li>
+    </ol>
+</div>
+
+<div class="section">
+    <h2>Features</h2>
+    <div class="features">
+        <div class="box">✔ Bounce Risk Detection</div>
+        <div class="box">✔ User Engagement Analysis</div>
+        <div class="box">✔ Performance Insights</div>
+        <div class="box">✔ Analysis History</div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Quick Navigation</h2>
+    <button>View Report</button>
+    <button>History</button>
+    <button>About</button>
+    <button>Contact</button>
+</div>
+
+<div class="footer">
+    <p>Bounce Rate Analyzer System</p>
+    <p>Developed by: Vanta Group</p>
+    <p>© 2026 All Rights Reserved</p>
+</div>
+
+</body>
+</html>
